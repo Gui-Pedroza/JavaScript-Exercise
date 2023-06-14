@@ -1,0 +1,52 @@
+
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 14pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.569);
+}
+
+section div#contador {
+    flex-direction: column;
+    padding: 10px;
+}
+
+/*
+section div#resultado {  
+
+}
+*/
+input {
+    margin: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 3px;
+    
+}
+
+div#resultado p {
+    margin-top: 5px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+}
