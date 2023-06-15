@@ -8,16 +8,21 @@ function contar() {
         res.innerHTML = 'Impossível contar!'
         inicio.focus
     } else {
+        res.innerHTML = 'Contando: <br>'
         if (passo == 0) {
             window.alert('Passo não pode ser igual a 0, considerando PASSO = 1')
             passo = 1
         }
-        for (var i = Number(inicio); i < Number(fim); Number(passo)++) {
-            var contando = document.createElement('p')
-            contando.setAttribute('id', 'paragrafo')
-            contando.innerHTML = 'Contando'
-            res.innerHTML += inicio + passo
+        if (Number(inicio) < Number(fim)) {
+            for (var i = Number(inicio); i <= Number(fim); i += Number(passo)) {
+                res.innerHTML += `${i} 👉 `
+            }           
+        } else {
+            for (var i = Number(inicio); i >= Number(fim); i -= Number(passo)) {
+                res.innerHTML += `${i} 👉 `
+            }            
         }
+        res.innerHTML += `🏴`
     }
 
 }
